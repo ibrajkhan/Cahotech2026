@@ -119,6 +119,7 @@ const KitDisposal = () => {
                     required
                     className="input__name"
                   />
+
                   <button
                     type="submit"
                     className="search__button"

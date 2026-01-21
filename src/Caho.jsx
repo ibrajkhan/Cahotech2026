@@ -122,10 +122,13 @@ const Caho = () => {
       <div className="odm">
         <div className="container">
           <div className="search__data_field">
-            <h3 className="dataHeadSearch">Search your Phone Number</h3>
+            {/* <h3 className="dataHeadSearch">Search your Phone Number</h3> */}
+            <h2 className="dataHead_sec text-center">
+              Search your phone number
+            </h2>
 
             <div className="fetching__data">
-              <div>
+              <div className="input_search">
                 {/* SEARCH FORM */}
                 <form onSubmit={handleSubmit(searchUser)}>
                   <input

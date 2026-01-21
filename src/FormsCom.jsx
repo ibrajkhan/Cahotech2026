@@ -120,9 +120,12 @@ const FormsCom = () => {
     <div id="rsvp">
       <div className="rsvp">
         <div className="rsvp__content">
-          <h3 className="montaga-regulars header_text">
+          {/* <h3 className="montaga-regulars header_text">
             Registration CAHOTECH 2026
-          </h3>
+          </h3> */}
+          <h2 className="dataHead_sec text-center">
+            Registration CAHOTECH 2026
+          </h2>
         </div>
       </div>
 

@@ -21,7 +21,7 @@ const Home = () => {
             <div className="fetching__data">
               <div className="text-center">
                 <select
-                  className="input__name"
+                  className="select_box"
                   value={selection}
                   onChange={(e) => setSelection(e.target.value)}
                 >

@@ -1,5 +1,5 @@
 .rsvp {
-  padding-top: 35px;
+  padding-top: 40px;
   /* margin-top: 14vh; */
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@ option {
     font-size: 15px;
   }
   .rsvp {
-    padding-top: 20px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 450px) {
