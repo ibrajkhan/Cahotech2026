@@ -35,7 +35,7 @@ const FormsCom = () => {
         /^(\+?\d{1,4}[\s-]?)?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{4}$/,
         "Invalid phone number",
       ),
-    organisation: yup.string().required("Organisation Required"),
+    // organisation: yup.string().required("Organisation Required"),
     // consent: yup.bool(),
   });
 
@@ -44,7 +44,7 @@ const FormsCom = () => {
       name: "",
       email: "",
       phone: "",
-      organisation: "",
+      // organisation: "",
       // consent: false, // Default should be boolean
     },
     validationSchema: schema,
@@ -80,7 +80,7 @@ const FormsCom = () => {
           Name: values.name,
           Email: values.email,
           Phone: normalizedPhone,
-          Organisation: values.organisation,
+          // Organisation: values.organisation,
           "Registration Status": "New Registration Present",
           Kit: "",
         };
@@ -124,7 +124,7 @@ const FormsCom = () => {
             Registration CAHOTECH 2026
           </h3> */}
           <h2 className="dataHead_sec text-center">
-            Registration CAHOTECH 2026
+            Registration Caho Diagnosticon
           </h2>
         </div>
       </div>
@@ -167,7 +167,7 @@ const FormsCom = () => {
               </Form.Control.Feedback>{" "}
             </Form.Group>
 
-            <Form.Group
+            {/* <Form.Group
               as={Col}
               md="6"
               xs="12"
@@ -199,7 +199,7 @@ const FormsCom = () => {
               <Form.Control.Feedback className="montaga-regulars">
                 Looks Good!
               </Form.Control.Feedback>
-            </Form.Group>
+            </Form.Group> */}
 
             <Form.Group
               as={Col}
@@ -317,7 +317,7 @@ const FormsCom = () => {
           <Button
             type="submit"
             disabled={loading}
-            className="button-sub montaga-regulars mt-1 mb-5"
+            className="button-sub montaga-regulars mt-1"
           >
             {loading && (
               <Spinner

@@ -5,6 +5,7 @@ import "./App.css";
 import Headers from "./header";
 import BelowImage from "./assets/Img/belowImage1.jpg";
 import MiceLogo from "./assets/Img/M&M.png";
+import MiceLogoWhite from "./assets/Img/White-m&m.webp";
 
 const SHEETDB_API = import.meta.env.VITE_SEARCH_REQUESTDB;
 
@@ -77,8 +78,8 @@ const App = () => {
         setSelectedUser(updatedUser);
         setUserData((prevData) =>
           prevData.map((user) =>
-            user.id === selectedUser.id ? updatedUser : user
-          )
+            user.id === selectedUser.id ? updatedUser : user,
+          ),
         );
       } else {
         Swal.fire({
@@ -119,7 +120,8 @@ const App = () => {
                   <button
                     type="submit"
                     className="search__button "
-                    disabled={loading}>
+                    disabled={loading}
+                  >
                     {loading && loadingMessage === "Loading..."
                       ? "Loading..."
                       : "Search"}
@@ -163,7 +165,8 @@ const App = () => {
                           <div className="btn_Select">
                             <button
                               className="select__button "
-                              onClick={() => setSelectedUser(user)}>
+                              onClick={() => setSelectedUser(user)}
+                            >
                               Select
                             </button>
                           </div>
@@ -210,7 +213,8 @@ const App = () => {
                           <button
                             className="button__mark"
                             onClick={() => updateUserStatus("Yes")}
-                            disabled={loading}>
+                            disabled={loading}
+                          >
                             {loading && loadingMessage === "Updating data..."
                               ? "Updating..."
                               : "Update as Received"}
@@ -229,7 +233,8 @@ const App = () => {
                     <div className="btn_Select">
                       <button
                         className="select__button mt-3"
-                        onClick={() => setSelectedUser(null)}>
+                        onClick={() => setSelectedUser(null)}
+                      >
                         Back
                       </button>
                     </div>
@@ -247,7 +252,7 @@ const App = () => {
           <div className="center_footer">
             <div className="footer_content">
               <p className="PoweredBy">Powered By</p>
-              <img src={MiceLogo} alt="mice-logo" />
+              <img src={MiceLogoWhite} alt="mice-logo" />
             </div>
           </div>
         </footer>

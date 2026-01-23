@@ -21,7 +21,7 @@
 }
 .search__button {
   padding: 8px 10px;
-  width: 70px;
+  /* width: 70px; */
   border-radius: 10px;
   margin-left: 10px;
   border: none;
@@ -31,8 +31,9 @@
 .button__mark {
   padding: 8px 10px;
   border-radius: 10px;
-  background-color: red;
+  background-color: rgb(202, 30, 30);
   border: none;
+  /* transition: background-color 1s ease-in-out;  */
   color: white;
 }
 .hi {
@@ -40,7 +41,7 @@
 }
 
 .button__mark:hover {
-  background-color: rgb(136, 15, 15);
+  background-color: red;
 }
 .search__button:hover {
   background-color: rgb(59, 59, 231);
@@ -78,7 +79,8 @@
 h4 {
   margin-bottom: 15px;
   margin-top: 20px;
-  color: rgb(241, 91, 116);
+
+  color: rgb(248, 39, 73);
   text-decoration: underline;
 }
 .update_text {
@@ -95,13 +97,13 @@ h4 {
   text-align: center;
   font-weight: 600;
   text-decoration: underline;
-  color: #20428d;
+  color: white;
   /* text-decoration: underline; */
 }
 .dataHead_sec {
   text-align: center;
   font-weight: 600;
-  color: #20428d;
+  color: white;
 }
 .dataHeadSearch {
   text-align: center;
@@ -114,8 +116,11 @@ h4 {
   align-items: center;
   margin-top: 40px;
 }
+.form__content {
+  padding-bottom: 0% !important;
+}
 .input_search {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 .odm {
   /* background-image: url("./assets/Img/BackImg.svg");
@@ -130,7 +135,7 @@ h4 {
   justify-content: center;
   align-items: center;
   /* padding: 30px 0; */
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -145,8 +150,8 @@ h4 {
   margin-bottom: 30px;
   margin-left: 10px;
 }
-.imn {
-  border: 1px solid gray;
+/* .imn {
+  border: 1.6px solid rgb(214, 213, 213);
   padding: 20px 20px;
   width: 100%;
   border-radius: 10px;
@@ -154,7 +159,22 @@ h4 {
   box-shadow:
     rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+} */
+
+.imn {
+  background-color: #5b2b73;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.6),
+    0 0 18px rgba(255, 255, 255, 0.08);
+  color: #fff;
 }
+
 .btn_Select {
   display: flex;
   justify-content: center;
@@ -174,8 +194,63 @@ h4 {
   font-weight: bold;
   /* position: relative; */
   text-align: center;
+  color: white;
   top: 0px;
   font-size: 15px;
+}
+.imn {
+  color: white;
+}
+
+.belowImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0px 30px; */
+  /* padding: 30px 0; */
+  /* padding-top: 30px; */
+  /* padding-bottom: 20px; */
+}
+
+.belowImage > img {
+  max-width: 100%;
+  height: auto;
+  width: 600px;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+/* Button */
+
+/* Base tab button */
+.select__button {
+  background-color: #e2688f;
+  /* border: 2px solid #e2688f; */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+/* Active tab */
+.select__button.active_tab {
+  background-color: #d12c61;
+  border: 1.3px solid #fff;
+  color: #fff;
+}
+
+/* Hover effect */
+.select__button:hover {
+  background-color: #d12c61;
+  color: white;
+}
+
+@media (max-width: 720px) {
+  .belowImage {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 480px) {

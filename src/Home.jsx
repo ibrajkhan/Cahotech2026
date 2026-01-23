@@ -4,9 +4,11 @@ import Headers from "./header";
 import Caho from "./Caho";
 import Onspot from "./Onspot";
 import MiceLogo from "./assets/Img/M&M.png";
+import MiceLogoWhite from "./assets/Img/White-m&m.webp";
+import Artwork from "./assets/Img/Newartwork.webp";
 
 const Home = () => {
-  const [selection, setSelection] = useState("");
+  const [selection, setSelection] = useState(""); // default tab
 
   return (
     <div>
@@ -17,18 +19,26 @@ const Home = () => {
           <div className="search__data">
             <h2 className="dataHead text-center">Conference Registration</h2>
 
-            {/* SELECT BOX */}
+            {/* TAB BUTTONS */}
             <div className="fetching__data">
-              <div className="text-center">
-                <select
-                  className="select_box"
-                  value={selection}
-                  onChange={(e) => setSelection(e.target.value)}
+              <div className="btn_Select text-center">
+                <button
+                  className={`select__button ${
+                    selection === "old" ? "active_tab" : ""
+                  }`}
+                  onClick={() => setSelection("old")}
                 >
-                  <option value="">Select Registration Type</option>
-                  <option value="old">Already Registered</option>
-                  <option value="new">New Registration</option>
-                </select>
+                  Already Registered
+                </button>
+
+                <button
+                  className={`select__button ms-2 ${
+                    selection === "new" ? "active_tab" : ""
+                  }`}
+                  onClick={() => setSelection("new")}
+                >
+                  New Registration
+                </button>
               </div>
             </div>
 
@@ -38,11 +48,15 @@ const Home = () => {
           </div>
         </div>
 
+        <div className="belowImage">
+          <img src={Artwork} alt="Caho_Diagnostion_Icon" />
+        </div>
+
         <footer className="py-3">
           <div className="center_footer">
             <div className="footer_content">
               <p className="PoweredBy">Powered By</p>
-              <img src={MiceLogo} alt="mice-logo" />
+              <img src={MiceLogoWhite} alt="mice-logo" />
             </div>
           </div>
         </footer>

@@ -167,9 +167,9 @@ const Caho = () => {
                           <p>
                             <strong>Phone:</strong> {user.Phone}
                           </p>
-                          <p>
+                          {/* <p>
                             <strong>Organization:</strong> {user.Organisation}
-                          </p>
+                          </p> */}
                           <p>
                             <strong>Registration Status:</strong>{" "}
                             {user["Registration Status"]}
@@ -206,10 +206,10 @@ const Caho = () => {
                       <p>
                         <strong>Phone:</strong> {selectedUser.Phone}
                       </p>
-                      <p>
+                      {/* <p>
                         <strong>Organization:</strong>{" "}
                         {selectedUser.Organisation}
-                      </p>
+                      </p> */}
                       <p>
                         <strong>Registration Status:</strong>{" "}
                         {selectedUser["Registration Status"]}

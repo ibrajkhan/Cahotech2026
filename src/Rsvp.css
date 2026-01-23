@@ -1,6 +1,7 @@
 .rsvp {
   padding-top: 40px;
   /* margin-top: 14vh; */
+  background-color: #4a215c;
   display: flex;
   justify-content: center;
 }
@@ -61,17 +62,18 @@ option {
 }
 .form__content {
   display: flex;
+  background-color: #4a215c;
   padding-top: 2%;
   justify-content: center;
   padding-bottom: 4%;
 }
 .button-sub {
-  background-color: #0c4778ff;
+  background-color: #13b613;
   color: white;
   border: none;
 }
 .button-sub:hover {
-  background-color: rgb(8, 47, 80);
+  background-color: #059205;
 }
 .text_field {
   padding-bottom: 25px;
@@ -85,6 +87,9 @@ option {
 .empin {
   color: #0c4778ff;
   font-weight: 600 !important;
+}
+.label_ {
+  color: white;
 }
 @media (max-width: 760px) {
   .label_ {

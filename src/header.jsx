@@ -5,14 +5,15 @@ import Navbar from "react-bootstrap/Navbar";
 import CahoIcon from "../src/assets/Img/M&M.png";
 import BluePine from "../src/assets/Img/Asset1.png";
 import Caho from "../src/assets/Img/cahotech-logo.png";
-import CahoDia2026 from "../src/assets/Img/Diag.webp";
+import CahoDia2026 from "../src/assets/Img/diag_logo.png";
 
 import "./header.css";
 
 function Headers() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  const [navbarBackground, setNavbarBackground] = useState("#0c4778ff");
+  const [navbarBackground, setNavbarBackground] = useState("#2e0b3d");
+  // 4a215c #0c4778ff #e2688f
 
   return (
     <Navbar
